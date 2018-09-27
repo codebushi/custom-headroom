@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 50px 20px;
+}
+
+.site-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    transition: transform 0.25s;
+}
+
+.site-nav.is-hidden {
+    transform: translateY(-100%);
+}
+.site-nav.is-visible {
+    transform: translateY(0);
+}
+
+.site-nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background: #222;
+}
+
+.site-nav  ul > li > a {
+    display: block;
+    padding: 15px 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.site-nav  ul > li > a:hover,
+.site-nav  ul > li > a:focus {
+    background: #666;
+}
