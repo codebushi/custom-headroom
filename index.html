@@ -67,15 +67,15 @@
     const nav = document.querySelector('.site-nav');
 
     function checkPosition() {
-      let windowTop = window.scrollY;
-      if (windowTop < scrollPos) {
+      let windowY = window.scrollY;
+      if (windowY < scrollPos) {
         nav.classList.add('is-visible');
         nav.classList.remove('is-hidden');
       } else {
         nav.classList.add('is-hidden');
         nav.classList.remove('is-visible');
       }
-      scrollPos = windowTop;
+      scrollPos = windowY;
     }
 
     // window.addEventListener('scroll', checkPosition);
